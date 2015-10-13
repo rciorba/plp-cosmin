@@ -1,8 +1,8 @@
 #!/usr/bin/python
 
 #     Problem 5:
-# Please write a program to generate all sentences where subject is in 
-# ["I", "You"] and verb is in ["Play", "Love"] and the object is in 
+# Please write a program to generate all sentences where subject is in
+# ["I", "You"] and verb is in ["Play", "Love"] and the object is in
 # ["Hockey","Football"].
 #
 # Hints:
@@ -16,6 +16,8 @@ subject = ["I", "You"]
 verb = ["Play", "Love"]
 obj = ["Hockey", "Football"]
 
+# problem 5 A
+# write your own version of itertools.product
+
 for sentence in product(subject, verb, obj):
     print ' '.join(sentence)
-
