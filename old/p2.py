@@ -18,10 +18,16 @@ class ProblemTwo(object):
         self.message = raw_input("Enter a text: ")
         return self.message
 
-    def print_string(self, message):
+    # def print_string(self, message):
+    # you're not really doing anything with this
+    def print_string(self):
         print self.message.upper()
 
 
 x = ProblemTwo()
-x.print_string(x.get_string())
+
+# x.print_string(x.get_string())
+# you have the state encapulated in the object;
+# why would you pass it back to the print_string method?
+x.print_string()
 
